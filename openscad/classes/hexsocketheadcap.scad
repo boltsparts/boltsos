@@ -31,15 +31,15 @@ idx == "M64" ? [64.0, 96.0, 140.0, 64.0, 46.0, 38.0, "None"] :
 "Error";
 
 function hexsocketheadcap_dims(key="M3", l=20, part_mode="default") = [
-	["b", BOLTS_convert_to_default_unit(hexsocketheadcap_table_0(key)[2],"mm")],
-	["t_min", BOLTS_convert_to_default_unit(hexsocketheadcap_table_0(key)[5],"mm")],
-	["s", BOLTS_convert_to_default_unit(hexsocketheadcap_table_0(key)[4],"mm")],
-	["l", l],
 	["d1", BOLTS_convert_to_default_unit(hexsocketheadcap_table_0(key)[0],"mm")],
 	["L", BOLTS_convert_to_default_unit(hexsocketheadcap_table_0(key)[6],"mm")],
-	["d2", BOLTS_convert_to_default_unit(hexsocketheadcap_table_0(key)[1],"mm")],
 	["key", key],
-	["k", BOLTS_convert_to_default_unit(hexsocketheadcap_table_0(key)[3],"mm")]];
+	["l", l],
+	["d2", BOLTS_convert_to_default_unit(hexsocketheadcap_table_0(key)[1],"mm")],
+	["t_min", BOLTS_convert_to_default_unit(hexsocketheadcap_table_0(key)[5],"mm")],
+	["s", BOLTS_convert_to_default_unit(hexsocketheadcap_table_0(key)[4],"mm")],
+	["k", BOLTS_convert_to_default_unit(hexsocketheadcap_table_0(key)[3],"mm")],
+	["b", BOLTS_convert_to_default_unit(hexsocketheadcap_table_0(key)[2],"mm")]];
 
 module hexsocketheadcap_geo(key, l, part_mode){
 	hex_socket2(

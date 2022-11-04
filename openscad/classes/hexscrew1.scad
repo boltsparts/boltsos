@@ -150,16 +150,16 @@ rowidx == "M68" ? ["", "", "x4", "", ""] :
 "Error";
 
 function hexscrew1_dims(key="M3", l=20, thread_type="coarse", part_mode="default") = [
-	["pitch_name", hexscrew1_table2d_1(key,thread_type)],
-	["h", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[4],"mm")],
-	["l", l],
-	["s", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[2],"mm")],
 	["d1", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[0],"mm")],
-	["pitch", BOLTS_convert_to_default_unit(hexscrew1_table2d_0(key,thread_type),"mm")],
-	["key", key],
+	["h", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[4],"mm")],
 	["e", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[3],"mm")],
-	["k", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[1],"mm")],
-	["thread_type", thread_type]];
+	["key", key],
+	["thread_type", thread_type],
+	["l", l],
+	["pitch", BOLTS_convert_to_default_unit(hexscrew1_table2d_0(key,thread_type),"mm")],
+	["pitch_name", hexscrew1_table2d_1(key,thread_type)],
+	["s", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[2],"mm")],
+	["k", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[1],"mm")]];
 
 function hexscrew1_conn(location,key="M3", l=20, thread_type="coarse", part_mode="default") = new_cs(
 	origin=hexConn(BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[1],"mm"), l, location)[0],
