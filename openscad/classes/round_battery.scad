@@ -13,9 +13,9 @@ idx == "Sub-C" ? [42.9, 22.2] :
 "Error";
 
 function round_battery_dims(T="AAA", part_mode="default") = [
-	["d", BOLTS_convert_to_default_unit(round_battery_table_0(T)[1],"mm")],
+	["T", T],
 	["h", BOLTS_convert_to_default_unit(round_battery_table_0(T)[0],"mm")],
-	["T", T]];
+	["d", BOLTS_convert_to_default_unit(round_battery_table_0(T)[1],"mm")]];
 
 function round_battery_conn(location,T="AAA", part_mode="default") = new_cs(
 	origin=roundBatteryConn(BOLTS_convert_to_default_unit(round_battery_table_0(T)[0],"mm"), location)[0],

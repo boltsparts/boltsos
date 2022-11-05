@@ -53,10 +53,10 @@ idx == "M140" ? [140.0, 200.0, 112.0, 220.8] :
 "Error";
 
 function hexagonnut2_dims(key="M3", part_mode="default") = [
-	["d1", BOLTS_convert_to_default_unit(hexagonnut2_table_0(key)[0],"mm")],
 	["key", key],
-	["m_max", BOLTS_convert_to_default_unit(hexagonnut2_table_0(key)[2],"mm")],
+	["d1", BOLTS_convert_to_default_unit(hexagonnut2_table_0(key)[0],"mm")],
 	["e_min", BOLTS_convert_to_default_unit(hexagonnut2_table_0(key)[3],"mm")],
+	["m_max", BOLTS_convert_to_default_unit(hexagonnut2_table_0(key)[2],"mm")],
 	["s", BOLTS_convert_to_default_unit(hexagonnut2_table_0(key)[1],"mm")]];
 
 function hexagonnut2_conn(location,key="M3", part_mode="default") = new_cs(

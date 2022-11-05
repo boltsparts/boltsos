@@ -129,13 +129,13 @@ idx == "51434" ? [170.0, 174.0, 340.0, 335.0, 135.0, 6.0] :
 "Error";
 
 function axialthrustbearing_dims(key="51200", part_mode="default") = [
-	["T", BOLTS_convert_to_default_unit(axialthrustbearing_table_0(key)[4],"mm")],
-	["d_w", BOLTS_convert_to_default_unit(axialthrustbearing_table_0(key)[0],"mm")],
 	["key", key],
-	["D_w", BOLTS_convert_to_default_unit(axialthrustbearing_table_0(key)[3],"mm")],
-	["d_g", BOLTS_convert_to_default_unit(axialthrustbearing_table_0(key)[1],"mm")],
 	["r_fillet", BOLTS_convert_to_default_unit(axialthrustbearing_table_0(key)[5],"mm")],
-	["D_g", BOLTS_convert_to_default_unit(axialthrustbearing_table_0(key)[2],"mm")]];
+	["d_w", BOLTS_convert_to_default_unit(axialthrustbearing_table_0(key)[0],"mm")],
+	["D_g", BOLTS_convert_to_default_unit(axialthrustbearing_table_0(key)[2],"mm")],
+	["d_g", BOLTS_convert_to_default_unit(axialthrustbearing_table_0(key)[1],"mm")],
+	["D_w", BOLTS_convert_to_default_unit(axialthrustbearing_table_0(key)[3],"mm")],
+	["T", BOLTS_convert_to_default_unit(axialthrustbearing_table_0(key)[4],"mm")]];
 
 module axialthrustbearing_geo(key, part_mode){
 	axialthrustbearing(

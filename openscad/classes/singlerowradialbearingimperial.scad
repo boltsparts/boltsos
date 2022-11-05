@@ -40,12 +40,12 @@ idx == "RMS26" ? [3.25, 7.5, 1.5625, 0.15625] :
 "Error";
 
 function singlerowradialbearingimperial_dims(key="RLS8", part_mode="default") = [
-	["d1", BOLTS_convert_to_default_unit(singlerowradialbearingimperial_table_0(key)[0],"in")],
 	["key", key],
-	["d2", BOLTS_convert_to_default_unit(singlerowradialbearingimperial_table_0(key)[1],"in")],
+	["d1", BOLTS_convert_to_default_unit(singlerowradialbearingimperial_table_0(key)[0],"in")],
 	["r_fillet", BOLTS_convert_to_default_unit(singlerowradialbearingimperial_table_0(key)[3],"in")],
-	["type", open],
-	["B", BOLTS_convert_to_default_unit(singlerowradialbearingimperial_table_0(key)[2],"in")]];
+	["d2", BOLTS_convert_to_default_unit(singlerowradialbearingimperial_table_0(key)[1],"in")],
+	["B", BOLTS_convert_to_default_unit(singlerowradialbearingimperial_table_0(key)[2],"in")],
+	["type", open]];
 
 module singlerowradialbearingimperial_geo(key, part_mode){
 	singlerowradialbearing(
