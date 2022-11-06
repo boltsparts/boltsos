@@ -20,9 +20,9 @@ idx == "200" ? [200.0, 204.0] :
 
 function din11850range2_dims(dn="10", l=1000, part_mode="default") = [
 	["dn", dn],
+	["id", BOLTS_convert_to_default_unit(din11850range2_table_0(dn)[0],"mm")],
 	["l", l],
-	["od", BOLTS_convert_to_default_unit(din11850range2_table_0(dn)[1],"mm")],
-	["id", BOLTS_convert_to_default_unit(din11850range2_table_0(dn)[0],"mm")]];
+	["od", BOLTS_convert_to_default_unit(din11850range2_table_0(dn)[1],"mm")]];
 
 function din11850range2_conn(location,dn="10", l=1000, part_mode="default") = new_cs(
 	origin=pipeConn(l, location)[0],

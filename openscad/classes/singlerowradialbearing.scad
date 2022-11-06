@@ -53,13 +53,13 @@ idx == "sealed, double" ? ["-2RS"] :
 "Error";
 
 function singlerowradialbearing_dims(key="608", type="open", part_mode="default") = [
-	["key", key],
-	["d1", BOLTS_convert_to_default_unit(singlerowradialbearing_table_0(key)[0],"mm")],
-	["r_fillet", BOLTS_convert_to_default_unit(singlerowradialbearing_table_0(key)[3],"mm")],
 	["d2", BOLTS_convert_to_default_unit(singlerowradialbearing_table_0(key)[1],"mm")],
+	["postfix", singlerowradialbearing_table_1(type)[0]],
 	["B", BOLTS_convert_to_default_unit(singlerowradialbearing_table_0(key)[2],"mm")],
+	["r_fillet", BOLTS_convert_to_default_unit(singlerowradialbearing_table_0(key)[3],"mm")],
+	["key", key],
 	["type", type],
-	["postfix", singlerowradialbearing_table_1(type)[0]]];
+	["d1", BOLTS_convert_to_default_unit(singlerowradialbearing_table_0(key)[0],"mm")]];
 
 module singlerowradialbearing_geo(key, type, part_mode){
 	singlerowradialbearing(
