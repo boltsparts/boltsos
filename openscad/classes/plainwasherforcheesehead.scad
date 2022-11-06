@@ -29,10 +29,10 @@ idx == "M36" ? [37.0, 60.0, 5.0] :
 "Error";
 
 function plainwasherforcheesehead_dims(key="M3", part_mode="default") = [
-	["s", BOLTS_convert_to_default_unit(plainwasherforcheesehead_table_0(key)[2],"mm")],
+	["key", key],
 	["d1", BOLTS_convert_to_default_unit(plainwasherforcheesehead_table_0(key)[0],"mm")],
 	["d2", BOLTS_convert_to_default_unit(plainwasherforcheesehead_table_0(key)[1],"mm")],
-	["key", key]];
+	["s", BOLTS_convert_to_default_unit(plainwasherforcheesehead_table_0(key)[2],"mm")]];
 
 function plainwasherforcheesehead_conn(location,key="M3", part_mode="default") = new_cs(
 	origin=washerConn(BOLTS_convert_to_default_unit(plainwasherforcheesehead_table_0(key)[1],"mm"), BOLTS_convert_to_default_unit(plainwasherforcheesehead_table_0(key)[2],"mm"), location)[0],

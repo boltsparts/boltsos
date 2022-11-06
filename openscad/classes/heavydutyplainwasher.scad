@@ -19,10 +19,10 @@ idx == "M30" ? [31.0, 68.0, 10.0] :
 "Error";
 
 function heavydutyplainwasher_dims(key="M10", part_mode="default") = [
-	["s", BOLTS_convert_to_default_unit(heavydutyplainwasher_table_0(key)[2],"mm")],
+	["key", key],
 	["d1", BOLTS_convert_to_default_unit(heavydutyplainwasher_table_0(key)[0],"mm")],
 	["d2", BOLTS_convert_to_default_unit(heavydutyplainwasher_table_0(key)[1],"mm")],
-	["key", key]];
+	["s", BOLTS_convert_to_default_unit(heavydutyplainwasher_table_0(key)[2],"mm")]];
 
 function heavydutyplainwasher_conn(location,key="M10", part_mode="default") = new_cs(
 	origin=washerConn(BOLTS_convert_to_default_unit(heavydutyplainwasher_table_0(key)[1],"mm"), BOLTS_convert_to_default_unit(heavydutyplainwasher_table_0(key)[2],"mm"), location)[0],
