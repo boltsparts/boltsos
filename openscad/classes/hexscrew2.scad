@@ -32,12 +32,12 @@ idx == "M64" ? [64.0, 40.0, 95.0, 104.86, "None"] :
 "Error";
 
 function hexscrew2_dims(key="M3", l=20, part_mode="default") = [
-	["h", BOLTS_convert_to_default_unit(hexscrew2_table_0(key)[4],"mm")],
-	["s", BOLTS_convert_to_default_unit(hexscrew2_table_0(key)[2],"mm")],
-	["d1", BOLTS_convert_to_default_unit(hexscrew2_table_0(key)[0],"mm")],
-	["l", l],
 	["key", key],
 	["k", BOLTS_convert_to_default_unit(hexscrew2_table_0(key)[1],"mm")],
+	["d1", BOLTS_convert_to_default_unit(hexscrew2_table_0(key)[0],"mm")],
+	["s", BOLTS_convert_to_default_unit(hexscrew2_table_0(key)[2],"mm")],
+	["l", l],
+	["h", BOLTS_convert_to_default_unit(hexscrew2_table_0(key)[4],"mm")],
 	["e", BOLTS_convert_to_default_unit(hexscrew2_table_0(key)[3],"mm")]];
 
 function hexscrew2_conn(location,key="M3", l=20, part_mode="default") = new_cs(

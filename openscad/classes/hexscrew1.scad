@@ -150,15 +150,15 @@ rowidx == "M68" ? ["", "", "x4", "", ""] :
 "Error";
 
 function hexscrew1_dims(key="M3", l=20, thread_type="coarse", part_mode="default") = [
+	["key", key],
 	["k", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[1],"mm")],
-	["h", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[4],"mm")],
+	["pitch", BOLTS_convert_to_default_unit(hexscrew1_table2d_0(key,thread_type),"mm")],
 	["s", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[2],"mm")],
 	["d1", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[0],"mm")],
-	["l", l],
-	["key", key],
-	["pitch", BOLTS_convert_to_default_unit(hexscrew1_table2d_0(key,thread_type),"mm")],
 	["thread_type", thread_type],
+	["l", l],
 	["pitch_name", hexscrew1_table2d_1(key,thread_type)],
+	["h", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[4],"mm")],
 	["e", BOLTS_convert_to_default_unit(hexscrew1_table_0(key)[3],"mm")]];
 
 function hexscrew1_conn(location,key="M3", l=20, thread_type="coarse", part_mode="default") = new_cs(
