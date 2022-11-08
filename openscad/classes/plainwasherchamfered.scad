@@ -49,8 +49,8 @@ idx == "M100" ? [104.0, 175.0, 14.0] :
 
 function plainwasherchamfered_dims(key="M3", part_mode="default") = [
 	["d1", BOLTS_convert_to_default_unit(plainwasherchamfered_table_0(key)[0],"mm")],
-	["key", key],
 	["d2", BOLTS_convert_to_default_unit(plainwasherchamfered_table_0(key)[1],"mm")],
+	["key", key],
 	["s", BOLTS_convert_to_default_unit(plainwasherchamfered_table_0(key)[2],"mm")]];
 
 function plainwasherchamfered_conn(location,key="M3", part_mode="default") = new_cs(

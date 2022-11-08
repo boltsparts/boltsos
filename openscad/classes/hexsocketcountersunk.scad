@@ -19,19 +19,19 @@ idx == "M24" ? [24.0, 39.0, 54.0, 60.0, "None", 14.0, 14.0, 10.3, 60.0, 90.0, 23
 "Error";
 
 function hexsocketcountersunk_dims(key="M3", l=20, part_mode="default") = [
-	["L", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[9],"mm")],
-	["key", key],
-	["b3", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[4],"mm")],
-	["d2", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[1],"mm")],
-	["h_max", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[10],"mm")],
-	["t", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[7],"mm")],
 	["d1", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[0],"mm")],
-	["s", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[6],"mm")],
-	["l", l],
-	["b2", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[3],"mm")],
+	["d2", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[1],"mm")],
 	["k_max", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[5],"mm")],
-	["b1", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[2],"mm")],
-	["alpha", hexsocketcountersunk_table_0(key)[8]]];
+	["b2", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[3],"mm")],
+	["l", l],
+	["b3", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[4],"mm")],
+	["h_max", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[10],"mm")],
+	["s", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[6],"mm")],
+	["alpha", hexsocketcountersunk_table_0(key)[8]],
+	["L", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[9],"mm")],
+	["t", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[7],"mm")],
+	["key", key],
+	["b1", BOLTS_convert_to_default_unit(hexsocketcountersunk_table_0(key)[2],"mm")]];
 
 module hexsocketcountersunk_geo(key, l, part_mode){
 	hex_socket1(

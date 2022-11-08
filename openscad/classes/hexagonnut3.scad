@@ -24,10 +24,10 @@ idx == "3 in" ? [3.0, 4.5, 2.59375] :
 "Error";
 
 function hexagonnut3_dims(key="0.375 in", part_mode="default") = [
-	["m_max", BOLTS_convert_to_default_unit(hexagonnut3_table_0(key)[2],"in")],
-	["key", key],
 	["d1", BOLTS_convert_to_default_unit(hexagonnut3_table_0(key)[0],"in")],
-	["s", BOLTS_convert_to_default_unit(hexagonnut3_table_0(key)[1],"in")]];
+	["s", BOLTS_convert_to_default_unit(hexagonnut3_table_0(key)[1],"in")],
+	["key", key],
+	["m_max", BOLTS_convert_to_default_unit(hexagonnut3_table_0(key)[2],"in")]];
 
 function hexagonnut3_conn(location,key="0.375 in", part_mode="default") = new_cs(
 	origin=nutConn(BOLTS_convert_to_default_unit(hexagonnut3_table_0(key)[2],"in"), location)[0],

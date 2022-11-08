@@ -36,11 +36,11 @@ idx == "M64" ? [64.0, 95.0, 32.0, 104.86] :
 "Error";
 
 function hexagonthinnut1_dims(key="M3", part_mode="default") = [
-	["m_max", BOLTS_convert_to_default_unit(hexagonthinnut1_table_0(key)[2],"mm")],
-	["key", key],
 	["d1", BOLTS_convert_to_default_unit(hexagonthinnut1_table_0(key)[0],"mm")],
+	["m_max", BOLTS_convert_to_default_unit(hexagonthinnut1_table_0(key)[2],"mm")],
+	["e_min", BOLTS_convert_to_default_unit(hexagonthinnut1_table_0(key)[3],"mm")],
 	["s", BOLTS_convert_to_default_unit(hexagonthinnut1_table_0(key)[1],"mm")],
-	["e_min", BOLTS_convert_to_default_unit(hexagonthinnut1_table_0(key)[3],"mm")]];
+	["key", key]];
 
 function hexagonthinnut1_conn(location,key="M3", part_mode="default") = new_cs(
 	origin=nutConn(BOLTS_convert_to_default_unit(hexagonthinnut1_table_0(key)[2],"mm"), location)[0],

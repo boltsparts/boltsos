@@ -97,8 +97,8 @@ rowidx == "NPS 48" ? ["None", "None", "None", "None", "None", "None", 0.375, "No
 function nominalpipesize_dims(nps="NPS 0.5", sched="40", l=50, part_mode="default") = [
 	["nps", nps],
 	["od", BOLTS_convert_to_default_unit(nominalpipesize_table_0(nps)[0],"in")],
-	["wall", BOLTS_convert_to_default_unit(nominalpipesize_table2d_0(nps,sched),"in")],
 	["sched", sched],
+	["wall", BOLTS_convert_to_default_unit(nominalpipesize_table2d_0(nps,sched),"in")],
 	["l", l]];
 
 function nominalpipesize_conn(location,nps="NPS 0.5", sched="40", l=50, part_mode="default") = new_cs(

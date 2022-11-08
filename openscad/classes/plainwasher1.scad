@@ -49,8 +49,8 @@ idx == "M100" ? [104.0, 175.0, 14.0] :
 
 function plainwasher1_dims(key="M3", part_mode="default") = [
 	["d1", BOLTS_convert_to_default_unit(plainwasher1_table_0(key)[0],"mm")],
-	["key", key],
 	["d2", BOLTS_convert_to_default_unit(plainwasher1_table_0(key)[1],"mm")],
+	["key", key],
 	["s", BOLTS_convert_to_default_unit(plainwasher1_table_0(key)[2],"mm")]];
 
 function plainwasher1_conn(location,key="M3", part_mode="default") = new_cs(
